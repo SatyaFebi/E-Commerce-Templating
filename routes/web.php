@@ -8,7 +8,7 @@ use App\Http\Controllers\PaymentMethodController;
 // });
 
 Route::resource('/', App\Http\Controllers\HomeController::class);
-Route::resource('/home', App\Http\Controllers\HomeController::class);
+// Route::resource('/home', App\Http\Controllers\HomeController::class);
 Route::resource('/shop', App\Http\Controllers\ShopController::class);
 Route::resource('/about', App\Http\Controllers\AboutController::class);
 Route::resource('/contact', App\Http\Controllers\ContactController::class);

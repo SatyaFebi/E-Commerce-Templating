@@ -11,7 +11,7 @@ class ShopingCartController extends Controller
      */
     public function index()
     {
-        return view('shoping-cart.index', [
+        return view('shopping-cart.index', [
             'title' => 'Shoping Cart'
         ]);
     }

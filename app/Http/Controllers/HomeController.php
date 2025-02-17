@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Paket;
-use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -16,7 +15,7 @@ class HomeController extends Controller
         return view('home.index', [
             'title' => 'Home',
             'kategories' => Paket::distinct()->get('kategori'),
-            'datas' => Paket::all()
+            'datas' => Paket::all(),
             // 'datas' => DB::table('pakets')
             // ->select('kategori', DB::raw('MIN(foto1) as foto1')) // Memilih kategori dan foto1 terkait
             // ->groupBy('kategori') // Mengelompokkan berdasarkan kategori
